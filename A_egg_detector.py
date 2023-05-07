@@ -383,7 +383,7 @@ def batch(path, sf=1, s=1, gs=3, ksize=1):
         for e in range(2, np.amax(labels) + 1):
             labels, _ = segment_eggs(imo,
                                      ksize=ksize)  # // Volvemos a etquitar cada huevo que hay en la imagen dado que en cada iteracion esta informacion se pierde
-            labels[labels != e] = 0;
+            labels[labels != e] = 0
             labels[labels == e] = 255  # // Creamos una mascara binaria para un huevo según el orden etiquetado
             labels = np.uint8(
                 labels)  # // Para poder aplicar ciertas operaciones debemos convertirlo al formato adecuado.
