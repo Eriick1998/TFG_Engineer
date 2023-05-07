@@ -409,9 +409,8 @@ def batch(path, sf=1, s=1, gs=3, ksize=1):
                     else:
                         directory = r'C:\Users\Erick\Desktop\TFG\Samples'  # Buenos
                         # directory = r'C:\Users\Erick\Desktop\TFG\Huevos\Samples'#Buenos
-                        os.chdir(directory)  # // Guardamos la imagen del huevo en el directorio especificado.
-                        cv.imwrite("Bueno" + '_{}.jpg'.format(count),
-                                   img_2)  # // Antes de guardarlo le damos un nombre y un formato
+                        os.chdir(directory)
+                        cv.imwrite("Bueno" + '_{}.jpg'.format(count), img_2)
                 else:
                     pass
             else:
