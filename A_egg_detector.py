@@ -191,7 +191,7 @@ def segment_eggs(im, ksize=0,
     debug = True
 
     # Visualize the HSV channels.
-    if debug == False:
+    if not debug:
         figure()
         ax = subplot(131)
         ax.imshow(hsv[:, :, 0], cmap=plt.get_cmap('hsv'))
